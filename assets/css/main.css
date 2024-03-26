@@ -933,7 +933,25 @@ body {
     text-align: initial;
   }
 
+  
+
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+  .contact__content {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .footer__social-list {
+    display: flex;
+    justify-content: center; /* Center-align the social icons */
+  }
+}
+
+
+
