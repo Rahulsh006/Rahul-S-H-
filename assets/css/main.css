@@ -955,3 +955,92 @@ body {
 
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.project__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  background-color:#242424;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project__description {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding */
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px; /* Increased border radius */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px; /* Increased font size */
+}
+
+.btn:hover {
+  background-color:  #208c61;
+}
